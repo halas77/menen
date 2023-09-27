@@ -1,8 +1,10 @@
+import { Catagories } from "@/constants/constants";
 import { AiOutlineSearch } from "react-icons/ai";
+import Card from "./Card";
 
 const Shop = () => {
   return (
-    <section id="section" className="w-full my-10">
+    <section id="#shop" className="w-full my-10">
       <div className="pb-10 flex justify-center">
         <h2 className="p-4 text-2xl border-b-2 border-sky-300 font-extrabold text-slate-800">
           Featured Fashions
@@ -18,6 +20,17 @@ const Shop = () => {
           <AiOutlineSearch size={30} className="" />
         </button>
       </div>
+      <div className="hidden xl:flex justify-center mt-10 gap-8">
+        {Catagories.map((item) => (
+          <button
+            key={item.label}
+            className="bg-zinc-300 text-slate-900 font-semibold text-sm rounded-md px-4 py-2 flex "
+          >
+            {item.label}
+          </button>
+        ))}
+      </div>
+      <Card/>
     </section>
   );
 };
