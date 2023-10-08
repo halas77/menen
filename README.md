@@ -1,6 +1,13 @@
+# Menen Ecommerce platform - 
+## with latest tech stack. NextJS 13, Typescript, Tailwind and so much more.
+
+![menen](https://github.com/halas77/menen/assets/138193176/ab7b846a-dfb3-44dc-9cf1-36ac5e99c732)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+### Getting Started
 
 First, run the development server:
 
