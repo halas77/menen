@@ -2,6 +2,7 @@ import { Navlinks } from "@/constants/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {FaCartPlus, FaUserCircle } from "react-icons/fa"
 
 const Hero = () => {
   return (
@@ -17,9 +18,10 @@ const Hero = () => {
               </li>
             ))}
           </ul>
-          <button className="mr-16 border border-slate-900 py-6 px-8 text-slate-800 hidden lg:flex justify-end items-center rounded-full font-bold">
-            Shop Now
-          </button>
+          <div className=" gap-6 mr-16 py-6 px-8 text-slate-700 hidden lg:flex justify-end items-center ">
+            <FaCartPlus size={23}/>
+            <FaUserCircle size={23}/>
+          </div>
       </div>
       <div className="bg-sky-200 h-[580px] mt-8 rounded-md mx-5">
         <div className="flex flex-col-2">
